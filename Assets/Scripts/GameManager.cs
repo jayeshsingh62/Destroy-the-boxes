@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         StartCoroutine(SpawnTarget());
-        score = 0;
+        UpdateScore(0);
     }
 
     // Update is called once per frame
