@@ -6,7 +6,9 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     public List<GameObject> targets;
+    public TextMeshProUGUI scoreText;
     private float spawnRate = 1.0f;
+    private int score;
 
     // Start is called before the first frame update
     void Start()
