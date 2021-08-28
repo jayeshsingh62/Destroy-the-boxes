@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Target : MonoBehaviour
 {
+    public int pointValue;
+    
     private Rigidbody targetRb;
     private GameManager gameManager;
     private float minSpeed = 12;
