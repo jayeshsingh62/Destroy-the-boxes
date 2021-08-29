@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     {
         StartCoroutine(SpawnTarget());
         UpdateScore(0);
+        gameOverText.gameObject.SetActive(true);
     }
 
     // Update is called once per frame
