@@ -15,8 +15,9 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(SpawnTarget());
-        UpdateScore(0);     
+        isGameActive = true;
+        UpdateScore(0);
+        StartCoroutine(SpawnTarget());     
     }
 
     // Update is called once per frame
