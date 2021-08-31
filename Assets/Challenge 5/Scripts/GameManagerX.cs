@@ -26,6 +26,10 @@ public class GameManagerX : MonoBehaviour
     private void Update()
     {
         timeLeft -= Time.deltaTime;
+        if (timeLeft == 0)
+        {
+            GameOver();
+        }
     }
     // Start the game, remove title screen, reset score, and adjust spawnRate based on difficulty button clicked
     public void StartGame(int difficulty)
