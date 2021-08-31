@@ -15,14 +15,18 @@ public class GameManagerX : MonoBehaviour
     public List<GameObject> targetPrefabs;
 
     private int score;
-    private int timeLeft = 60;
+    private float timeLeft = 60;
     private float spawnRate = 1.5f;
     public bool isGameActive;
 
     private float spaceBetweenSquares = 2.5f; 
     private float minValueX = -3.75f; //  x value of the center of the left-most square
     private float minValueY = -3.75f; //  y value of the center of the bottom-most square
-    
+
+    private void Update()
+    {
+        timeLeft -= Time.deltaTime;
+    }
     // Start the game, remove title screen, reset score, and adjust spawnRate based on difficulty button clicked
     public void StartGame(int difficulty)
     {
