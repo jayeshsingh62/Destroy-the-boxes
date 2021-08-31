@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class DifficultyButton : MonoBehaviour
 {
+    public int difficulty;
     private Button button;
     private GameManager gameManager;
 
