@@ -9,6 +9,7 @@ public class GameManagerX : MonoBehaviour
 {
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI gameOverText;
+    public TextMeshProUGUI timer;
     public GameObject titleScreen;
     public Button restartButton; 
 
@@ -82,6 +83,10 @@ public class GameManagerX : MonoBehaviour
         scoreText.text = "Score: " + score;
     }
 
+    void UpdateTime()
+    {
+        timer.text = "Time: " + timeLeft;
+    }
     // Stop game, bring up game over text and restart button
     public void GameOver()
     {
